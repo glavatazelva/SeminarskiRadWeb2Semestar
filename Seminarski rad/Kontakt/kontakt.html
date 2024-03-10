@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name = "autor" content = "Luka Peričin">
+    <meta name = "smjer" content = "računarstvo">
+    <meta name = "tema" content = "Iznajmljivanje dvorana">
+    <meta name = "ime_tvrtke" content = "HallBros">
+    <meta name = "stranica" content = "kontakt">
+
+    <title>Kontakt</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../Seminarski 2. dio/fontawesome-free-6.4.0-web/css/all.css">
+
+    <link rel="stylesheet" href="kontakt_styles.css">
+    <link rel = "icon" href = "../images/logo.png" type = "images/x-icon">
+</head>
+<body>
+   
+    <div class = "container-fluid header">   
+        <div class = "row"> 
+            <div class = "logo col-lg-1 col-md-12"><img src = "../images/logo.png"> </div>
+
+        <div class = "col-lg-2 col-md-12">
+                 <a href = "../naslovnica.html"><div class ="navigacija">Naslovnica <i class="fa-solid fa-house"></i></div></a>
+        </div>
+
+        <div class = "col-lg-2 col-md-12">
+            <a href = "#"><div class ="navigacija">Kontakt <i class="fa-solid fa-phone"></i></div></a>
+        </div>
+
+        <div class = "col-lg-2 col-md-12">
+            <a href = "../about.html"><div class ="navigacija">O nama <i class="fa-solid fa-user"></i></div></a>
+        </div>
+
+        <div class = "col-lg-2 col-md-12">
+            <a href = "../Seminarski 2. dio/Novosti/novosti.html"><div class ="navigacija">Novosti <i class="fa-solid fa-bell"></i></div></a>
+        </div>
+
+        <div class = "col-lg-2 col-md-12">
+            <a href = "../Seminarski 2. dio/Trgovina/trgovina.html"><div class ="navigacija">Trgovina <i class="fa-solid fa-cart-shopping"></i> </div></a>
+        </div>
+        
+        </div>    
+    </div>
+
+
+    <div class = "contact">
+        <h2 class = "naslov1">kontaktirajte nas putem:</h2>
+        <h2 class = "naslov2">kontakt putem:</h2>
+
+        <div class ="social_media">
+            <div class = "mail"> 
+                <a href = "mailto:lpericin1@tvz.hr?subject=Upit"><img src ="../images/za_kontakt/mail_icon.png" alt = "mail icon"></a>
+            </div>
+
+            <div class = "instagram"> 
+                <a href = "https://www.instagram.com/" target="_blank"><img src ="../images/za_kontakt/instagram_icon.png" alt = "ig icon"></a>
+            </div>
+
+            <div class = "tvz"> 
+                <a href = "https://www.tvz.hr/" target="_blank"><img src ="../images/za_kontakt/TVZ-logo.svg" alt = "tvz icon"></a>
+            </div>
+
+            <div style ="clear: both;"></div>
+        </div>
+      
+
+    </div>
+
+    <div class = "margin_5pct"></div>
+
+    <div class = "findus">
+        <p><span>Pronađite nas i u poslovnicama.</span></p>
+            <iframe src="https://www.google.com/maps/d/embed?mid=1Zt-pRN8hiBTe465Ve3kEnjM0mnuKOSA&ehbc=2E312F" ></iframe>
+
+    </div>
+
+
+    <div class = "youtube">
+        <p><span>Posjetite naš youtube kanal.</span><br> Osim bitnih informacija možete pronaći i inspirativne video uratke naših klijenata.</p>
+            <div class ="qryt"><img src = "../images/za_kontakt/qrcode_www.youtube.com.png" alt = "qr code"></div>
+            <div class = "yticon"><a href = "https://www.youtube.com/channel/UCzMje4QNZfHbG7fUiG2IOIQ" target="blank"><img src="../images/za_kontakt/youtube_icon.webp" alt = "yt-icon"></a></div>
+    </div>
+
+    
+    <div style = "clear: both;"></div>
+
+    <div class = "margin_5pct"></div>
+
+    <h2 class = "forma_naslov">Unos Forme</h2>
+
+    <div class ="forma">  
+    <form action = "submit.html" method="get">
+
+
+    <div class = "forma_left">
+        <label for = "ime">Ime:</label><br>
+        <input class = "form_half" name = "ime" id = "ime" type = "text" placeholder="Pero" required >
+        
+        <br>
+
+        <label for = "prezime">Prezime:</label><br>
+        <input class = "form_half" name = "prezime" id = "prezime" type = "text" placeholder="Perić" required>
+
+        <br>
+
+        <label>Broj ljudi:</label><br>
+        <input class = "form_half" type = "number" placeholder="broj" required max="20" min="1"><br>
+
+        
+        <label>Grad:</label><br>
+        <input type="radio" value="zadar" name = "odabrani_grad" id = "zadar">
+        <label for = "zadar" class = "manji_label">Zadar</label> <br>
+
+        <input type="radio" value="zagreb" name = "odabrani_grad" id = "zagreb">
+        <label for = "zagreb" class = "manji_label">Zagreb</label><br>
+
+        <br>
+        <input class = "form_half" type = "date" required name = "datum">
+
+        
+
+        
+    </div>
+        
+
+    <div class = "forma_right">
+
+    
+        <label>Odaberite dvoranu:</label><br>
+        <select class = "form_half" name = "dvorana" id = "dvorana" required>
+            <option disabled selected>Dvorana</option>
+            <option value = "visnjik">Višnjik</option>
+            <option value = "jazine">Jazine</option>
+            <option value = "mocire">Mocire</option>
+            <option value = "velesajam">Velesajam</option>
+            <option value = "KIF">Kineziološki fakulter</option>
+        </select>
+        <br>
+
+        <br>
+        <label>Sportovi:</label><br>
+
+        <label for = "badminton" class = "manji_label">badminton</label>
+        <input type="checkbox" value="badminton" name = "odabrani_sport" id = "badminton">
+        
+
+        <br>
+
+        <label for = "kosarka" class = "manji_label">košarka</label>
+        <input type="checkbox" value="kosarka" name = "odabrani_sport" id = "kosarka">
+        
+
+        <br>
+
+        <label for = "futsal" class = "manji_label">futsal</label>
+        <input type="checkbox" value="futsal" name = "odabrani_sport" id = "futsal">
+        
+
+        <br><br><br><br>
+    
+        <button type="submit">Pošalji</button>
+        <button type="reset">Reset</button>
+    </div>
+
+    <div style = "clear: both;"></div>
+    </form>
+    </div>
+
+
+    <br>
+
+     <footer>
+
+        <div class = "imePrezime">
+            <h2>Luka Peričin</h2>
+            <p>0246108219</p>
+        </div>
+    
+    </footer>
+
+</body>
+</html>

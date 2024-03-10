@@ -1,0 +1,326 @@
+
+body{
+   
+    margin: 0;
+    padding: 0;
+
+    background-image: url(../../images/pattern-reducedAlpha.png);
+    background-repeat: repeat;
+    background-attachment: fixed;
+    
+      
+}
+*{
+    font-family: 'Inter', sans-serif;
+}
+
+h1,h2,h3,h5{
+    font-family: 'Righteous', cursive;
+    color:rgb(75, 75, 173);
+    text-align: center;
+}
+
+span{
+    color:rgb(75, 75, 173);
+}
+
+h4{
+    color: gold;
+}
+
+h6{
+    font-family: 'Righteous', cursive;
+    color:red;
+}
+
+/* font-family: 'Inter', sans-serif; */
+
+.row{
+    margin-right: calc(.5 * var(--bs-gutter-x));
+}
+
+/*HEADER*/
+
+
+/*
+.header a{
+    text-align: center;
+    width: 15%;
+    background-color: rgb(75, 75, 173);
+    height: 30%;
+    text-decoration: none;
+    color:white;
+
+    padding:20px 20px;
+    
+    margin-top: 10%;
+
+    font-weight: bold;
+    border-radius: 20px;
+    border:3px solid black;
+
+}
+*/
+
+.header{
+    padding: 10px 0;
+    background-color:rgb(87, 84, 84);
+
+    padding-bottom: 15px;
+}
+
+.logo img{
+    width: 100%;
+}
+
+.header a{
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.navigacija{
+  
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    font-weight: bold;
+    border-radius: 20px;
+    border:3px solid black;
+
+    margin-top: 8%;
+    text-align: center;
+
+    width: 100%;
+    background-color: rgb(75, 75, 173);
+
+    color:white;
+
+   margin-left: 7%;
+    
+}
+
+.navigacija:hover{
+    box-shadow: 0.5vw 0.5vw 0.5vw 0.5vw rgb(69, 66, 66);
+}
+
+.navigacija i{
+    margin-left: 2%;
+}
+
+@media (max-width: 992px){
+    .navigacija{
+       
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 1%;
+
+       
+    }
+
+    .header img{
+        display: none;
+    }
+}
+/*Naslov*/
+.naslov{
+    text-align: center;
+    margin-top: 3%;
+    font-size: 60px;
+
+}
+
+/*Proizvod*/
+
+.flex-container{
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+
+
+.proizvod{
+    display: flex;
+    justify-content:space-between;
+   
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    border: 5px solid black;
+    border-radius: 10px;
+    width: 320px;
+
+    margin: 1% 2%;
+}
+
+
+
+.proizvod img{
+    width: 80%;
+    height: 180px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.proizvod p{
+    text-align: center;
+    font-weight: bold;
+    width: 90%;
+    
+}
+
+.cijene{
+    height: 150px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 10px;
+    background-color: gold;
+    color: black;
+    
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.cijene h4{
+    font-weight: bold;
+}
+
+.cijene del{
+    color: red;
+}
+
+
+.cijene h4{
+    color: black;
+}
+
+.cijene span{
+    color:green;
+}
+
+.cart a{
+    background-color: white;
+
+   
+    border: 3px solid black;
+    color: black;
+    font-size: 2em;
+    padding: 10px 10px;
+    border-radius: 20px;
+
+    transition: all 1.5s;
+}
+
+.cart a:hover{
+    color:rgb(13, 188, 13);
+    background-color: black;
+    border:3px solid rgb(13, 188, 13);
+}
+
+.bestseller{
+    padding-bottom: 15px;
+}
+
+.popular{
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    background-color: rgb(46, 122, 152);
+    width: 100%;
+}
+
+.popular h3{
+
+    color: white;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(87, 84, 84);
+    margin-top: 5%;
+    padding: 10px 0px;
+    color: white;
+
+   text-align: center;
+}
+
+footer p{
+    font-size: 2em;
+}
+
+.popust{
+    width: 100%;
+    text-align: center;
+    background-color: gold;
+    color: black;
+    
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    flex-wrap: wrap;
+margin-top: -1%;
+background-color: gold;
+    
+    border-bottom-left-radius: 3vw;
+    border-bottom-right-radius: 3vw;
+    border-bottom: 5px solid black;
+
+    padding-bottom: 2%;
+}
+
+
+.popust-artikl{
+
+    margin-top: 1%;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+
+    border:3px solid black;
+
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;   
+    
+    text-align: center;
+
+    
+    
+    width: 300px;
+    height: 200px;
+}
+
+.popust-artikl h3{
+    background-color: rgb(255,255,255,0.7);
+    padding: 3% 3%;
+    color:green;
+    
+
+}
+
+.popust-artikl-1{
+    background-image: url(trgovina-img/gold-membership.png);
+}
+
+.popust-artikl-2{
+    background-image: url(trgovina-img/premium-membership-bg.png);
+}
+
+.popust-artikl-3{
+    background-image: url(trgovina-img/hibridni-bicikl-riverside.avif);
+}
+
+.popust-artikl-4{
+    background-image: url(trgovina-img/velesajam_badminton.jpg);
+}

@@ -1,0 +1,540 @@
+body{
+    background-image: url(images/pattern-reducedAlpha.png);
+   
+    background-repeat: repeat;
+    background-attachment: fixed;
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: hallbros;
+    src: url(Fonts/JackportCollegeNcv-1MZe.ttf);
+}
+
+/*boja koju koristin rgb(75, 75, 173)*/
+
+
+/*HEADER*/
+
+.row{
+    margin-right: calc(.5 * var(--bs-gutter-x));
+}
+
+.header{
+    padding: 10px 0;
+    background-color:rgb(87, 84, 84);
+
+    padding-bottom: 15px;
+}
+
+.logo img{
+    width: 100%;
+}
+
+.header a{
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.navigacija{
+  
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    font-weight: bold;
+    border-radius: 20px;
+    border:3px solid black;
+
+    margin-top: 8%;
+    text-align: center;
+
+    width: 100%;
+    background-color: rgb(75, 75, 173);
+
+    color:white;
+
+   margin-left: 7%;
+    
+}
+
+.navigacija:hover{
+    box-shadow: 0.5vw 0.5vw 0.5vw 0.5vw rgb(69, 66, 66);
+}
+
+.navigacija i{
+    margin-left: 2%;
+}
+
+@media (max-width: 992px){
+    .navigacija{
+       
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 1%;
+
+       
+    }
+
+    .header img{
+        display: none;
+    }
+}
+
+
+/*FOOTER*/
+footer{
+ 
+    margin-bottom: -10%;
+    width:100%;
+    background-color: rgb(87, 84, 84);
+   
+}
+
+.imePrezime{
+    width: 50%;
+    text-align: center;
+    color:white;
+    margin:0 auto;
+    
+}
+
+.imePrezime h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2vw;
+}
+
+.imePrezime p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2vw;
+}
+
+
+
+
+/* UVODNI GOVOR */
+.hallbros{
+    margin:0 auto;
+    width:75vw;
+   /* top:13vh;*/
+    margin-bottom: 15%;
+    
+
+}
+
+.hallbros p{
+    background-color: rgb(255, 255, 255);
+    color:black;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:2vw;
+    overflow: auto;
+
+    margin-top: 5%;
+    margin-bottom: -10%;
+    padding: 1vw;
+
+    border:0.3vw solid black;
+    border-radius: 2vw;
+    font-weight: lighter;
+    
+}
+
+
+.hallbros h1{
+    
+    text-align: center;
+    color:rgb(75, 75, 173);
+    font-size: 10vw;
+    font-family: hallbros;
+    font-weight: lighter;
+}
+
+.hallbros span{
+    font-weight:bold;
+    color:rgb(75, 75, 173);
+}
+
+
+/*REZERVIRAJTE U OVIM GRADOVIMA*/
+.rezervirajte{
+    
+    width: 70%;
+    margin-left: 20%;
+    
+
+    font-family: hallbros;
+    text-decoration: underline;
+    font-weight: lighter;
+    font-size: 3vw;
+    color:rgb(75, 75, 173);
+}
+
+.shortcuts{
+    margin-left:25%;
+    text-align: center;
+    width: 50%;
+
+    color:rgb(75, 75, 173);
+    font-size: 3vw;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.shortcuts a:link{
+    color:black;
+ 
+ }
+ 
+ .shortcuts a:visited{
+     color:black;
+ }
+ 
+ .shortcuts a:active{
+     color:black;
+ }
+ 
+ .shortcuts a:hover{
+     color:rgb(75, 75, 173);
+ }
+
+
+
+/*VELIKI DIV KOJI OBUHVACA SVE GRADOVE*/
+
+
+.gradovi a:link{
+   color:black;
+
+}
+
+.gradovi a:visited{
+    color:black;
+}
+
+.gradovi a:active{
+    color:black;
+}
+
+.gradovi a:hover{
+    color:rgb(75, 75, 173);
+}
+
+.gradovi{
+   
+    width:80%;
+    margin-left: 10%;
+}
+
+.gradovi p{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:2vw;
+}
+
+.gradovi h1{
+    font-size: 5vw;  
+    font-family: hallbros;
+    color:rgb(75, 75, 173);
+    font-weight: lighter;
+}
+
+.gradovi h2{
+    font-size: 3vw;  
+    font-family: hallbros;
+    color:rgb(75, 75, 173);
+    font-weight: lighter;
+}
+
+.gradovi span{
+    font-weight:bold;
+    color:rgb(75, 75, 173);
+}
+
+.gradovi ol{
+   position: relative;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+    
+    margin-left: 0;
+    font-size:2vw;
+    list-style-type: lower-alpha;
+}
+
+.gradovi ::marker{
+  color:rgb(75, 75, 173);
+}
+
+
+.gradovi li{
+    
+    margin-bottom: 2vh;
+}
+
+/*1965*/
+.zadar {
+    padding-left: 1vw;
+
+    margin-top: 10%;
+    background-color: white;
+    border:0.3vw solid black;
+    border-radius: 2vw;
+}
+
+.zadar h1, .zagreb h1{
+   margin-top: 0;
+   text-align: center;
+}
+
+
+.zadar ul{
+    float: left;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+    
+    margin-left: 0;
+    font-size:2vw;
+    list-style-type: square;
+}
+
+/*DVORANA KRESIMIR COSIC*/
+.kreso{
+    padding-top: 10%;
+    margin:0 auto;
+    width: 90%;
+}
+
+@media (max-width:190px) {
+    .kreso{
+        padding-top:20%;
+    }
+}
+
+.kresoTxt{
+    width:50%;
+}
+
+.kresoKip{
+    float: left;
+    width:40%;
+   margin-left: 10%;
+   
+
+}
+
+.kresoKip q{
+    
+    background-color:rgb(75, 75, 173); 
+    color:white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1vw;
+}
+
+.kresoKip img{
+    width: 100%;
+    border:0.3vw solid black;
+}
+
+.kresoDvorana{
+    margin-top: 10%;
+    
+   width: 60%;
+   margin-left: 15%;
+}
+
+.kresoDvorana iframe{
+    width: 100%;
+    height: 26vw;
+    border:0.3vw solid black;
+
+   
+    
+}
+
+
+/*JAZINE*/
+
+.jazine{
+    margin:0 auto;
+    width: 90%;
+    margin-top: 15%;
+   
+}
+
+.jazine iframe{
+    width:50%;
+    height: 30vw;
+    margin-left:20%;
+    border:0.3vw solid black;
+    
+}
+
+/*MOCIRE*/
+
+.mocire{
+    margin:0 auto;
+    
+    width: 90%;
+    margin-top: 15%;
+}
+
+.mocireImg{
+   
+    margin-left: 20%;
+    width: 60%;
+    
+
+}
+
+.mocire img{
+    width: 100%;
+    border:0.3vw solid black;
+    margin-bottom:5%;
+    
+}
+
+/*ZAGREB*/
+.zagreb{
+    padding-left: 1vw;
+
+    margin-top: 6%;
+    margin-bottom: 5%;
+    background-color: white;
+    border:0.3vw solid black;
+    border-radius: 2vw;
+}
+
+.zagreb p{
+    margin-right: 5%;
+}
+
+/*VELESAJAM*/
+
+.velesajam{
+    margin:0 auto;
+    width: 90%;
+    margin-top: 10%;
+}
+
+.velesajamGalerija{
+    background-color:rgb(75, 75, 173) ;
+    padding: 2%;
+    width: 80%;
+    margin:0 auto;
+    border:0.3vw solid black;
+    margin-bottom: 5%;
+}
+
+.velesajamGalerija img{
+    border:0.3vw solid black;
+}
+
+.velesajam_kos img:hover{
+    filter:opacity(50%);
+    filter:blur(0.3em);
+}
+
+.velesajam_bad, .velesajam_ten{
+    float:left;
+    padding: 0;
+    width: 49%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+.velesajam_float{
+height: 33.34%;
+}
+
+.velesajam_bad{
+    margin-right: 2%;
+}
+
+.velesajam_bad img, .velesajam_ten img{
+    width: 100%;
+    height: 100%;
+}
+
+.velesajam_kos{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin:0;
+    width:100%;
+}
+
+.velesajam_kos img{
+    width: 100%;
+}
+
+.velesajam_nog{
+    width: 100%;
+    height: 100%;
+}
+
+.velesajam_nog img{
+    width:100%;
+}
+
+/*KIF*/
+
+.KIF{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 15%;
+}
+
+
+
+.KIF-logo{
+    width: 20%;
+    margin-right: 5%;
+    float: left;
+    clear:both;
+}
+
+.KIF-logo img{
+    width: 100%;
+}
+
+.KIF-desc{
+    text-align: justify;
+}
+
+
+.dvorana_1 , .dvorana_2{
+width: 49%;  
+float: left;
+margin-bottom: 5%;
+}
+
+.dvorana_1{
+    margin-right: 2%;
+}
+
+.dvorana_1 img, .dvorana_2 img{
+    width: 100%;    
+    border:0.3vw solid black;
+        
+}
+
+table{
+  background-color: white;
+    border-spacing: 0;
+   
+    margin:0 auto;
+    width: 60%;
+    
+    border:0.3vw solid black;
+}
+
+td{
+    border:0.3vw solid black;
+    
+    text-align: center;
+    font-family: hallbros;
+    color:rgb(75, 75, 173);
+    font-size:3vw ;
+}
+
+table img{
+    width:10vw;
+}
+
